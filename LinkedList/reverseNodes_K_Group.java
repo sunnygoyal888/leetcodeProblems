@@ -33,26 +33,26 @@ class Solution {
 
 /*
 Explanation - 
-  1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
-  Add dummy node
-  0 (pointer) -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
-  
-  Reverse k nodes -
-  step1: 0 (pointer) -> 1      2 -> 3 -> 4 -> 5 -> 6 -> 7
-	step2: 0 (pointer) -> 1 <- 2      3 -> 4 -> 5 -> 6 -> 7
-	step3: 0 (pointer) -> 1 <- 2 <- 3      4 -> 5 -> 6 -> 7
-  
-  step3: 0 (pointer) -> 1 <- 2 <- 3 (prev)    4 (curr) -> 5 -> 6 -> 7
-  
-  Adjusting the node links -
-  after 1st line:   0 (pointer) -> 1 (tail) <- 2 <- 3 (prev)    4 (curr) -> 5 -> 6 -> 7
-	after 2nd line:  0 (pointer) -> 1 (tail) <- 2 <- 3 (prev)    4 (curr) -> 5 -> 6 -> 7
-								                  |____________________________↑
-	after 3rd line:   
-								|---------------------------↓
-						0 (pointer)    1 (tail) <- 2 <- 3 (prev)    4 (curr) -> 5 -> 6 -> 7
-									  |___________________________________↑
-									   
-	after forth line:	0 -> 3 -> 2 -> 1 (pointer) -> 4 -> 5 -> 6 -> 7
+1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
+Add dummy node
+0 (pointer) -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
+
+Reverse k nodes -
+step1: 0 (pointer) -> 1      2 -> 3 -> 4 -> 5 -> 6 -> 7
+step2: 0 (pointer) -> 1 <- 2      3 -> 4 -> 5 -> 6 -> 7
+step3: 0 (pointer) -> 1 <- 2 <- 3      4 -> 5 -> 6 -> 7
+
+step3: 0 (pointer) -> 1 <- 2 <- 3 (prev)    4 (curr) -> 5 -> 6 -> 7
+
+Adjusting the node links -
+after 1st line:   0 (pointer) -> 1 (tail) <- 2 <- 3 (prev)    4 (curr) -> 5 -> 6 -> 7
+after 2nd line:   0 (pointer) -> 1 (tail) <- 2 <- 3 (prev)    4 (curr) -> 5 -> 6 -> 7
+				 |____________________________↑
+after 3rd line:   
+		      |---------------------------↓
+		  0 (pointer)    1 (tail) <- 2 <- 3 (prev)    4 (curr) -> 5 -> 6 -> 7
+			         |____________________________↑
+
+after 4th line:	  0 -> 3 -> 2 -> 1 (pointer) -> 4 -> 5 -> 6 -> 7
 
 */

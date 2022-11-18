@@ -3,6 +3,8 @@
 // Input: s = "aab"
 // Output: [["a","a","b"],["aa","b"]]
 
+// Solution Explanation -> https://leetcode.com/problems/palindrome-partitioning/discuss/1667647/Well-Explained-JAVA-C%2B%2B-PYTHON-JavaScript-oror-Easy-for-mind-to-Accept-it
+
 class Solution {
     public List<List<String>> partition(String s) {
         List<List<String>> res = new ArrayList<>();

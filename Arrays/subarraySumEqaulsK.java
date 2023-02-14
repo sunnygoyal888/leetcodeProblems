@@ -1,3 +1,11 @@
+// Question link -> https://leetcode.com/problems/subarray-sum-equals-k/description/
+
+// Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+// Input: nums = [1,2,3], k = 3
+// Output: 2
+
+// Solution video -> https://www.youtube.com/watch?v=20v8zSo2v18
+
 class Solution {
     // Approach 2 - Using HashMap || TC = O(n)
     public int subarraySum(int[] nums, int k) {

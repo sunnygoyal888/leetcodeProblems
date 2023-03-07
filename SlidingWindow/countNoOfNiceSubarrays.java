@@ -11,7 +11,7 @@
 
 
 class Solution {
-    // Approach 3 -> Sliding Window | TC - O(N)
+    // Approach 3 -> Sliding Window | TC - O(N) | SC - O(1)
     public int numberOfSubarrays(int[] nums, int k) {
         return atMostKSubarrays(nums, k) - atMostKSubarrays(nums, k-1);
     }
@@ -38,7 +38,7 @@ class Solution {
     }
 }
 
-/* Approach 2 -> Using HashMap | Transformed into Subarrays Sum Equals K problem
+/* Approach 2 -> Using HashMap | Transformed into Subarrays Sum Equals K problem | TC - O(N) | SC - O(N)
 public int numberOfSubarrays(int[] nums, int k) {
     int count = 0;
     HashMap<Integer, Integer> map = new HashMap<>();
@@ -55,7 +55,7 @@ public int numberOfSubarrays(int[] nums, int k) {
 }
 */
 
-/* Approach 1 -> Brute Force | TC - O(N)
+/* Approach 1 -> Brute Force | TC - O(N^2) | SC - O(1)
 public int numberOfSubarrays(int[] nums, int k) {
     int count = 0;
     for(int i = 0; i < nums.length; i++){

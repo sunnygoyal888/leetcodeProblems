@@ -46,7 +46,7 @@ public int numSubarraysWithSum(int[] nums, int goal) {
 }
 */
 
-/* Approach 1 -> Brute Force | TC - O(N)
+/* Approach 1 -> Brute Force | TC - O(N^2)
 public int numSubarraysWithSum(int[] nums, int goal) {
     int count = 0;
     for(int i = 0; i < nums.length; i++){

@@ -50,4 +50,4 @@ We can store co-ordinates in a list & store that list in a set as set will retur
 We can call one of the starting points a base, and subtract the base coordinates from the land’s coordinates (Cell Coordinates – Base coordinates).
 
 Make sure to follow a particular traversal and a particular order pattern, so that list ordering remains the same for every cell.
-/*
+*/
